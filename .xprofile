@@ -1,0 +1,6 @@
+picom --config=/home/ali/.config/picom/picom.conf &
+
+firefox --private-window &
+vlc &
+thunar &
+sudo sh -c 'echo XHC > /proc/acpi/wakeup'

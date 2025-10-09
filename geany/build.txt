@@ -1,0 +1,5 @@
+#Set Build Command
+
+compile: avr-gcc -mmcu=atmega32a  -Wall -Os -o %e.elf *.c &&avr-size --format=avr main.elf --mcu=atmega32 
+Build:   avr-objcopy -j .text -j .data -O ihex %e.elf %e.hex
+Excute:  avrdude -c usbasp -p m32a -U flash:w:main.hex && exit

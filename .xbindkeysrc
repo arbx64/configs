@@ -1,0 +1,14 @@
+#Dec Volume
+	"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-"
+	m:0x0 + c:122
+    XF86AudioLowerVolume
+
+#inc volume
+	"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+"
+	m:0x0 + c:123
+    XF86AudioRaiseVolume
+
+#Screenshot
+	#"flameshot gui"
+	#m:0x40 + c:107
+	#Mod4 + Print
